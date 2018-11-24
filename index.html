@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>JavaScript Practice 3</title>
+    <script src="main.js"></script>
+</head>
+<body>
+    <!--Name of page-->
+    <header>
+        <h1>JavaScript Practice lesson 3</h1>
+        <hr>
+    </header>
+    <main>
+        <!--Getting information about new user-->
+        <section class="log-form">
+             <form method="GET" id="create-user-form">
+            <!--Text will be input-->
+            <h2 class="headings">Create new User</h2>
+            <p>
+                <label class="log-form-labels">First name:</label>
+                <input type="text" name="first-name"
+                class="inputs-text">
+            </p>
+            <p>
+                <label class="log-form-labels">Last name:</label>
+                <input type="text" name="last-name"
+                class="inputs-text">
+            </p>
+            <p>
+                <label class="log-form-labels">Age:</label>
+                <input type="text" name="age"
+                class="inputs-text">
+            </p>
+            <p>
+                <label class="log-form-labels">City:</label>
+                <input type="text" name="city"
+                class="inputs-text">
+            </p>
+
+            <p><label>List of Interests:</label>
+                <!--drag and drop-->
+                <select name="drop" class="inputs-text in-one-line" >
+                     <option name="basketball">Basketball</option>
+                    <option name="reading">Reading</option>
+                    <option name="programming" >Programming</option>
+                </select>
+                or
+                <input type="text" name="own-interest" 
+                placeholder="Type your own interests" class="inputs-text">
+            </p>
+
+            <!--submitting-->
+            <input type="button" value="Create" id="create" class="create-button">
+        </form>
+        </section>
+
+
+        <section class="user-list">
+            <!--Table of users-->
+        <aside>
+            <h2 class="headings">List of Users</h2>
+            <table name="users" id="users">
+                <tr>
+                    <thead>
+                        <th>Username</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Interests</th>
+                        <th></th>
+                    </thead>
+                </tr>
+                <!-- <tr class="table-content">
+                    <td>Bruce Wayne</td>
+                    <td>35</td>
+                    <td>Gotham</td>
+                    <td>Reading, Help people</td>
+                    <td><button class="delete-button" name="delete">x</button></td>
+                </tr> -->
+               <!--  <tr class="table-content">
+                    <td>Bruce Wayne</td>
+                    <td>35</td>
+                    <td>Gotham</td>
+                    <td>Reading, Help people</td>
+                    <td><button class="delete-button" name="delete">x</button></td>
+                </tr>
+                <tr class="table-content">
+                    <td>Bruce Wayne</td>
+                    <td>35</td>
+                    <td>Gotham</td>
+                    <td>Reading, Help people</td>
+                    <td><button class="delete-button" name="delete">x</button></td>
+                </tr> -->
+            </table>
+         </aside> 
+        <!--ending of page-->
+        </section>
+    </main>
+</body>
+</html>

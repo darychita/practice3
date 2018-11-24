@@ -1,0 +1,104 @@
+/*same rule for whole page*/
+main{
+	display: flex;
+}
+
+/*commom rules for both sections: log-form and user-list*/
+section {
+	display: inline-block;
+	width: 50%;
+	padding: 0 40px;
+}
+
+section.user-list{
+	/*line between sections */
+	border-left: 1px solid #8c8b8b;
+}
+/*setting a style for headings of the sections*/
+h2.headings{
+	color: teal;
+	text-align: center;
+}
+
+/*rules for the "log-form" section*/
+/*rules for labels near inputs*/
+form > p > label.log-form-labels{
+	/*making labels as blocks is to separate them from inputs
+	and show them on different lines */
+	display: block; 
+}
+
+/*rules for the inputs fields including drag-and-drop*/
+form > p > .inputs-text{
+	/*all inputs except last must fill a half of the section*/
+	width: 50%;
+	border: 1px solid teal;
+	border-radius: 5px;
+	padding: 5px 8px;
+	
+}
+
+/*rules for the last line of the form; drag-and-drop and 
+iss nearst right neighbour*/
+form > p > select.inputs-text, select.inputs-text + input{
+	/*overridding the width property is for showing drag-and-drop
+	list anf text input with "name=interest" in one line*/
+	width: auto;
+}
+
+
+/*styling a "Create" button (submit)*/
+input.create-button{
+	width: 30%;
+	float: right;/*place for this button in the right 
+	corner of the form*/
+	background: white;
+
+	border: 3px solid teal;
+	border-radius: 20px;
+	padding: 4px 7px;
+	color: teal; /*color of the text*/
+	font-weight: bold; /*text*/
+
+	cursor: pointer;
+}
+
+/*////////////////////////////////////////////////////////
+Rules for the section "user-table" */
+section.user-list > aside > table{
+	/*a table must fill whole section*/
+	width: 100%;
+}
+
+/*rules for headings of the columns*/
+section.user-list > aside > table > thead th {
+	font-weight: bold;
+	text-align: left;
+	padding: 12px 0px; /*spaces in top and bottom*/
+	background: whitesmoke;
+}
+
+/*rules for cells*/
+tr.table-content td{
+	text-align: left;
+	padding: 7px 0px; /* top and bottom spaces */
+	
+}
+
+/*styling the delete buttons*/
+button.delete-button{
+	display: block; /* to be able to center them*/
+	margin: 0 auto; /* placing in the center*/
+	background-color: transparent; /*without background*/
+	border-style: none;
+	cursor: pointer;
+
+	font-weight: bold; /*text*/
+	padding: 6px 10px;
+}
+
+/*changing the color of the background when 
+curson is on the button*/
+button.delete-button:hover{
+	background-color: whitesmoke; 
+}
