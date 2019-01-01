@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="style.css">
     <title>JavaScript Practice 3</title>
-    <script src="main.js"></script>
+    <!-- <script src="main.js"></script> -->
 </head>
 <body>
     <!--Name of page-->
@@ -15,34 +15,34 @@
     <main>
         <!--Getting information about new user-->
         <section class="log-form">
-             <form method="GET" id="create-user-form">
+             <form method="GET" id="create-user-form" >
             <!--Text will be input-->
             <h2 class="headings">Create new User</h2>
             <p>
                 <label class="log-form-labels">First name:</label>
                 <input type="text" name="first-name"
-                class="inputs-text">
+                class="inputs-text" required>
             </p>
             <p>
                 <label class="log-form-labels">Last name:</label>
                 <input type="text" name="last-name"
-                class="inputs-text">
+                class="inputs-text" required>
             </p>
             <p>
                 <label class="log-form-labels">Age:</label>
                 <input type="text" name="age"
-                class="inputs-text">
+                class="inputs-text" required>
             </p>
             <p>
                 <label class="log-form-labels">City:</label>
                 <input type="text" name="city"
-                class="inputs-text">
+                class="inputs-text" required>
             </p>
 
             <p><label>List of Interests:</label>
                 <!--drag and drop-->
-                <select name="drop" class="inputs-text in-one-line" >
-                     <option name="basketball">Basketball</option>
+                <select name="interestsSelect" class="inputs-text in-one-line" >
+                    <option name="basketball">Basketball</option>
                     <option name="reading">Reading</option>
                     <option name="programming" >Programming</option>
                 </select>
@@ -97,5 +97,6 @@
         <!--ending of page-->
         </section>
     </main>
+    <script src="app.js"></script>
 </body>
 </html>
